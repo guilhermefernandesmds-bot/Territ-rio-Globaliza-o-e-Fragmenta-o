@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Território, Globalização e Fragmentação</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            margin-top: 35px;
+            font-size: 23px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        .controles {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            border: none;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #222;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        #status {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="controles">
+            <button onclick="iniciarLeitura()">🔊 Ouvir texto</button>
+            <button onclick="pararLeitura()">⏹ Parar</button>
+        </div>
+
+        <div id="status">
+            Clique em "Ouvir texto" para começar.
+        </div>
+
+        <h1>
+            TERRITÓRIO, GLOBALIZAÇÃO E FRAGMENTAÇÃO:<br>
+            O OLHAR DE MILTON SANTOS
+        </h1>
+
+        <h2>Um geógrafo do Terceiro Mundo</h2>
+
+        <p>
+            Milton Santos nasceu em 1926, em Brotas de Macaúbas (BA), e foi um dos maiores geógrafos do mundo. Exilado após o golpe de 1964, escreveu cerca de 40 livros e recebeu, em 1994, o Prêmio Vautrin Lud, o mais importante da Geografia. Para ele, o território não é apenas uma área no mapa, mas o espaço usado pela sociedade, base da vida social, econômica e política (território usado).
+        </p>
+
+        <h2>Globalização e fragmentação</h2>
+
+        <p>
+            A globalização atual só foi possível pela união entre técnica, ciência e informação, chamada por ele de meio técnico-científico-informacional. O documentário compara esse momento ao colonialismo, apresentado como a "primeira globalização", marcada pela ocupação territorial. Segundo o filme, entre 1500 e 1600, cerca de 70 dos 80 milhões de nativos da América foram exterminados. Já a globalização atual é marcada pela fragmentação dos territórios: os lugares entram nas redes globais de forma seletiva e desigual.
+        </p>
+
+        <h2>O poder das empresas sobre o território</h2>
+
+        <p>
+            As grandes empresas organizam os lugares conforme seus interesses, o que Milton Santos chamou de uso corporativo do território. O documentário cita o Boeing 777, com peças de 322 fornecedores em 38 países. A circulação de capitais e mercadorias é muito mais favorecida do que a de grande parte das pessoas. Ele criticava também o globalitarismo, o pensamento único difundido pela mídia e por organismos internacionais.
+        </p>
+
+        <h2>Uma outra globalização</h2>
+
+        <p>
+            Milton Santos via a globalização de três formas: como fábula (o mundo que nos fazem ver), como perversidade (o mundo como ele é) e como possibilidade (o mundo como pode ser). Defendia que uma outra globalização, mais solidária, pode ser construída "de baixo", pelas periferias e pelos atores sociais, usando as próprias técnicas atuais.
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+const texto = `
+Território, Globalização e Fragmentação: O Olhar de Milton Santos.
+
+Um geógrafo do Terceiro Mundo.
+
+Milton Santos nasceu em 1926, em Brotas de Macaúbas, na Bahia, e foi um dos maiores geógrafos do mundo.
+
+Exilado após o golpe de 1964, escreveu cerca de 40 livros e recebeu, em 1994, o Prêmio Vautrin Lud, o mais importante da Geografia.
+
+Para ele, o território não é apenas uma área no mapa, mas o espaço usado pela sociedade, base da vida social, econômica e política. Esse conceito é chamado de território usado.
+
+Globalização e fragmentação.
+
+A globalização atual só foi possível pela união entre técnica, ciência e informação, chamada por ele de meio técnico-científico-informacional.
+
+O documentário compara esse momento ao colonialismo, apresentado como a primeira globalização, marcada pela ocupação territorial.
+
+Segundo o filme, entre 1500 e 1600, cerca de 70 dos 80 milhões de nativos da América foram exterminados.
+
+Já a globalização atual é marcada pela fragmentação dos territórios: os lugares entram nas redes globais de forma seletiva e desigual.
+
+O poder das empresas sobre o território.
+
+As grandes empresas organizam os lugares conforme seus interesses, o que Milton Santos chamou de uso corporativo do território.
+
+O documentário cita o Boeing 777, com peças de 322 fornecedores em 38 países.
+
+A circulação de capitais e mercadorias é muito mais favorecida do que a de grande parte das pessoas.
+
+Ele criticava também o globalitarismo, o pensamento único difundido pela mídia e por organismos internacionais.
+
+Uma outra globalização.
+
+Milton Santos via a globalização de três formas: como fábula, o mundo que nos fazem ver; como perversidade, o mundo como ele é; e como possibilidade, o mundo como pode ser.
+
+Defendia que uma outra globalização, mais solidária, pode ser construída "de baixo", pelas periferias e pelos atores sociais, usando as próprias técnicas atuais.
+`;
+
+function iniciarLeitura() {
+
+    if (!window.speechSynthesis) {
+        document.getElementById("status").textContent =
+            "Seu navegador não suporta leitura de texto.";
+        return;
+    }
+
+    speechSynthesis.cancel();
+
+    const fala = new SpeechSynthesisUtterance(texto);
+
+    fala.lang = "pt-BR";
+    fala.rate = 0.88;
+    fala.pitch = 1;
+
+    const vozes = speechSynthesis.getVoices();
+
+    let voz = vozes.find(function(v) {
+        return v.lang === "pt-BR";
+    });
+
+    if (!voz) {
+        voz = vozes.find(function(v) {
+            return v.lang.toLowerCase().startsWith("pt");
+        });
+    }
+
+    if (voz) {
+        fala.voice = voz;
+    }
+
+    fala.onstart = function() {
+        document.getElementById("status").textContent =
+            "🔊 Leitura em andamento...";
+    };
+
+    fala.onend = function() {
+        document.getElementById("status").textContent =
+            "✅ Leitura concluída.";
+    };
+
+    fala.onerror = function() {
+        document.getElementById("status").textContent =
+            "⚠️ Erro ao iniciar a leitura.";
+    };
+
+    speechSynthesis.speak(fala);
+}
+
+function pararLeitura() {
+
+    if (window.speechSynthesis) {
+        speechSynthesis.cancel();
+    }
+
+    document.getElementById("status").textContent =
+        "⏹ Leitura interrompida.";
+}
+
+</script>
+
+</body>
+</html>
